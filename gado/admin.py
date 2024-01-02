@@ -1,3 +1,6 @@
-from django.contrib import admin
+# gado/admin.py
 
-# Register your models here.
+from django.contrib import admin
+from .models import Animal
+
+admin.site.register(Animal)

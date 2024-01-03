@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='django-insecure-+k_yq@z-r3by4
 DEBUG = 'RENDER' not in os.environ
 
 # https://docs.djangoproject.com/en/3.0/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ['sis-fazendaacude.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:

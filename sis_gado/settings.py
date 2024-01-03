@@ -27,6 +27,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='django-insecure-+k_yq@z-r3by4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'RENDER' not in os.environ
 
+if DEBUG:
+    import mimetypes
+    mimetypes.add_type("image/png", ".png", True)
+
 # https://docs.djangoproject.com/en/3.0/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = ['*']
 

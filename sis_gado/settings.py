@@ -238,6 +238,7 @@ JAZZMIN_UI_TWEAKS = {
 }
 
 WSGI_APPLICATION = 'sis_gado.wsgi.application'
+LOGIN_REDIRECT_URL = '/admin/'
 
 
 # Database

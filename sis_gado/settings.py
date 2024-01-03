@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', default='django-insecure-+k_yq@z-r3by4#a%1+74p8_^z1#c8dhl%z%t_5iiq(e9ieff@s')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'RENDER' not in os.environ
+DEBUG = True
 
 if DEBUG:
     import mimetypes
